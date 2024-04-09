@@ -35,7 +35,7 @@ public class Main {
         GameProgress gameProgress = null;
         try (FileInputStream fis = new FileInputStream(addressFile);
              ObjectInputStream ois = new ObjectInputStream(fis)) {
-            gameProgress = (GameProgress) ois.readObject();
+             gameProgress = (GameProgress) ois.readObject();
         } catch (FileNotFoundException ex) {
             System.out.println(ex.getMessage());
         } catch (Exception ex) {
